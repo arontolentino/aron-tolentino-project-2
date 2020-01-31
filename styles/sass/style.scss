@@ -1,3 +1,65 @@
-body {
-	font-size: 100%;
+//IMPORTS
+@import 'base/normalize';
+
+// COLOR VARIABLES
+$textColor: #171717;
+$primaryColor: #b9dde7;
+$secondaryColor: #68b0c1;
+$tertiaryColor: #227284;
+$accentColor: #f38d8d;
+$whiteColor: #f6f6f6;
+
+// FONT VARIABLES
+$primaryFont: 'Oswald', sans-serif;
+$secondaryFont: 'Cabin', sans-serif;
+
+// _BASE.SCSS
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
+
+.visuallyHidden:not(:focus):not(:active) {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(00 0 0);
+	overflow: hidden;
+}
+
+body {
+	font-size: 62.5%;
+	font-family: $secondaryFont;
+}
+
+h1 {
+	font-family: $primaryFont;
+	font-size: 8rem;
+	line-height: 9.2rem;
+	letter-spacing: 0.1rem;
+}
+
+h2 {
+	font-family: $primaryFont;
+	font-size: 4.2rem;
+	letter-spacing: 0.1rem;
+}
+
+h3 {
+	font-family: $primaryFont;
+	font-size: 3.2rem;
+	letter-spacing: 0.1rem;
+}
+
+button {
+}
+
+// HOME
+
+//
