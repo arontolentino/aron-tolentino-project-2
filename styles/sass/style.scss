@@ -35,31 +35,154 @@ $secondaryFont: 'Cabin', sans-serif;
 
 body {
 	font-size: 62.5%;
+	font-smoothing: antialiased;
+}
+
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+p {
 	font-family: $secondaryFont;
+	font-size: 1.05rem;
+	line-height: 1.7rem;
+	margin-top: 0.8rem;
 }
 
 h1 {
 	font-family: $primaryFont;
 	font-size: 8rem;
-	line-height: 9.2rem;
 	letter-spacing: 0.1rem;
+	text-transform: uppercase;
 }
 
 h2 {
 	font-family: $primaryFont;
-	font-size: 4.2rem;
+	font-size: 2rem;
 	letter-spacing: 0.1rem;
+	text-transform: uppercase;
 }
 
 h3 {
 	font-family: $primaryFont;
 	font-size: 3.2rem;
 	letter-spacing: 0.1rem;
+	text-transform: uppercase;
 }
 
-button {
+img {
+	width: 100%;
 }
 
-// HOME
+.wrapper {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 2rem;
+	display: flex;
+}
 
-//
+.button {
+	font-family: $primaryFont;
+	font-size: 0.95rem;
+	letter-spacing: 0.05rem;
+	padding: 0.4rem 1.8rem;
+	margin-top: 1.5rem;
+	background-color: $accentColor;
+	display: inline-block;
+	transition: all 0.3s;
+
+	&:link,
+	&:visited,
+	&:focus {
+		color: $textColor;
+	}
+
+	&:hover {
+		background-color: $accentColor;
+		color: $whiteColor;
+	}
+}
+
+//****// HOME //****//
+
+// Navigation
+
+.navBar {
+	background-color: $primaryColor;
+	padding: 0.5rem 0;
+
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logo {
+		font-size: 1.9rem;
+	}
+
+	a {
+		font-family: $primaryFont;
+		font-size: 0.95rem;
+		letter-spacing: 0.1rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin: 0 1.5rem;
+		transition: all 0.3s;
+
+		&:link,
+		&:visited,
+		&:focus {
+			color: $textColor;
+		}
+
+		&:hover {
+			color: $whiteColor;
+		}
+	}
+}
+
+// Hero
+.homeHero {
+	background-color: $primaryColor;
+	padding-top: 2rem;
+	height: 540px;
+
+	// .wrapper {
+	// 	align-items: center;
+	// }
+
+	.image {
+		margin-top: 1rem;
+		width: 40%;
+	}
+
+	.content {
+		margin-left: 3rem;
+		padding-top: 9rem;
+		position: relative;
+	}
+}
+
+.circleImg {
+	width: 33%;
+	height: auto;
+	position: absolute;
+	right: -45px;
+	top: 130px;
+}
+
+.homeOverview {
+	background-color: $whiteColor;
+	padding: 6rem 0;
+
+	.wrapper {
+		justify-content: flex-end;
+	}
+
+	.content {
+		width: 60%;
+		padding-left: 3rem;
+	}
+}

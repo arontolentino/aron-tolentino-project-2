@@ -199,24 +199,153 @@ input::-moz-focus-inner {
 
 body {
   font-size: 62.5%;
+  font-smoothing: antialiased;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+p {
   font-family: "Cabin", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7rem;
+  margin-top: 0.8rem;
 }
 
 h1 {
   font-family: "Oswald", sans-serif;
   font-size: 8rem;
-  line-height: 9.2rem;
   letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 h2 {
   font-family: "Oswald", sans-serif;
-  font-size: 4.2rem;
+  font-size: 2rem;
   letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 h3 {
   font-family: "Oswald", sans-serif;
   font-size: 3.2rem;
   letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.05rem;
+  padding: 0.4rem 1.8rem;
+  margin-top: 1.5rem;
+  background-color: #f38d8d;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button:link, .button:visited, .button:focus {
+  color: #171717;
+}
+
+.button:hover {
+  background-color: #f38d8d;
+  color: #f6f6f6;
+}
+
+.navBar {
+  background-color: #b9dde7;
+  padding: 0.5rem 0;
+}
+
+.navBar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navBar .logo {
+  font-size: 1.9rem;
+}
+
+.navBar a {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 1.5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navBar a:link, .navBar a:visited, .navBar a:focus {
+  color: #171717;
+}
+
+.navBar a:hover {
+  color: #f6f6f6;
+}
+
+.homeHero {
+  background-color: #b9dde7;
+  padding-top: 2rem;
+  height: 540px;
+}
+
+.homeHero .image {
+  margin-top: 1rem;
+  width: 40%;
+}
+
+.homeHero .content {
+  margin-left: 3rem;
+  padding-top: 9rem;
+  position: relative;
+}
+
+.circleImg {
+  width: 33%;
+  height: auto;
+  position: absolute;
+  right: -45px;
+  top: 130px;
+}
+
+.homeOverview {
+  background-color: #f6f6f6;
+  padding: 6rem 0;
+}
+
+.homeOverview .wrapper {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.homeOverview .content {
+  width: 60%;
+  padding-left: 3rem;
 }
