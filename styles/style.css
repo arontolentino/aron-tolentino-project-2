@@ -314,16 +314,21 @@ img {
 .homeHero {
   background-color: #b9dde7;
   padding-top: 2rem;
-  height: 540px;
+  height: 550px;
 }
 
 .homeHero .image {
   margin-top: 1rem;
-  width: 40%;
+  width: 39%;
+}
+
+.homeHero .image img {
+  -webkit-box-shadow: 16px 16px white;
+          box-shadow: 16px 16px white;
 }
 
 .homeHero .content {
-  margin-left: 3rem;
+  margin-left: 5rem;
   padding-top: 9rem;
   position: relative;
 }
@@ -338,7 +343,7 @@ img {
 
 .homeOverview {
   background-color: #f6f6f6;
-  padding: 6rem 0;
+  padding: 5.5rem 0;
 }
 
 .homeOverview .wrapper {
@@ -366,6 +371,20 @@ img {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature i {
+  background: #b9dde7;
+  padding: 0.8rem;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.feature .content {
+  margin: 0 1rem;
 }
 
 .spotlights {

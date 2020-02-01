@@ -149,7 +149,7 @@ img {
 .homeHero {
 	background-color: $primaryColor;
 	padding-top: 2rem;
-	height: 540px;
+	height: 550px;
 
 	// .wrapper {
 	// 	align-items: center;
@@ -157,11 +157,15 @@ img {
 
 	.image {
 		margin-top: 1rem;
-		width: 40%;
+		width: 39%;
+
+		img {
+			box-shadow: 16px 16px white;
+		}
 	}
 
 	.content {
-		margin-left: 3rem;
+		margin-left: 5rem;
 		padding-top: 9rem;
 		position: relative;
 	}
@@ -177,7 +181,7 @@ img {
 
 .homeOverview {
 	background-color: $whiteColor;
-	padding: 6rem 0;
+	padding: 5.5rem 0;
 
 	.wrapper {
 		justify-content: flex-end;
@@ -202,6 +206,18 @@ img {
 .feature {
 	flex-basis: 50%;
 	margin-bottom: 3rem;
+	display: flex;
+
+	i {
+		background: $primaryColor;
+		padding: 0.8rem;
+		border-radius: 50%;
+		font-size: 1rem;
+	}
+
+	.content {
+		margin: 0 1rem;
+	}
 }
 
 // Spotlights
