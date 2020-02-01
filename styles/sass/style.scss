@@ -36,6 +36,7 @@ $secondaryFont: 'Cabin', sans-serif;
 body {
 	font-size: 62.5%;
 	font-smoothing: antialiased;
+	overflow-x: hidden;
 }
 
 a {
@@ -45,7 +46,7 @@ a {
 
 p {
 	font-family: $secondaryFont;
-	font-size: 1.05rem;
+	font-size: 1rem;
 	line-height: 1.7rem;
 	margin-top: 0.8rem;
 }
@@ -66,13 +67,14 @@ h2 {
 
 h3 {
 	font-family: $primaryFont;
-	font-size: 3.2rem;
+	font-size: 1.6rem;
 	letter-spacing: 0.1rem;
 	text-transform: uppercase;
 }
 
 img {
 	width: 100%;
+	display: block;
 }
 
 .wrapper {
@@ -84,9 +86,9 @@ img {
 
 .button {
 	font-family: $primaryFont;
-	font-size: 0.95rem;
+	font-size: 1rem;
 	letter-spacing: 0.05rem;
-	padding: 0.4rem 1.8rem;
+	padding: 0.5rem 1.7rem;
 	margin-top: 1.5rem;
 	background-color: $accentColor;
 	display: inline-block;
@@ -184,5 +186,140 @@ img {
 	.content {
 		width: 60%;
 		padding-left: 3rem;
+	}
+}
+
+// Feature Grid
+.homeFeatureGrid {
+	padding: 5rem 0;
+	background-color: $whiteColor;
+
+	.wrapper {
+		flex-wrap: wrap;
+	}
+}
+
+.feature {
+	flex-basis: 50%;
+	margin-bottom: 3rem;
+}
+
+// Spotlights
+.spotlights {
+	padding: 5rem 0;
+
+	.wrapper {
+		flex-wrap: wrap;
+	}
+}
+
+.spotlight {
+	display: flex;
+	flex: 0 0 100%;
+
+	&:first-child {
+		margin-bottom: 5rem;
+	}
+
+	.image {
+		position: relative;
+		flex: 0 0 50%;
+
+		&:after {
+			content: ' ';
+			position: absolute;
+			width: 200%;
+			bottom: -16px;
+			height: 100%;
+			z-index: 1;
+		}
+
+		img {
+			position: relative;
+			z-index: 2;
+		}
+	}
+}
+
+.spotlightRight {
+	margin-top: -7rem;
+	align-items: end;
+	.image {
+		&:after {
+			right: -16px;
+			background-color: $tertiaryColor;
+		}
+	}
+
+	.content {
+		margin-left: 6.5rem;
+	}
+}
+
+.spotlightLeft {
+	flex-direction: row-reverse;
+	margin-bottom: -6.5rem;
+
+	.image {
+		&:after {
+			left: 16px;
+			background-color: $secondaryColor;
+		}
+	}
+
+	.content {
+		margin-right: 6.5rem;
+
+		a {
+			float: right;
+		}
+	}
+}
+
+// Journey
+.journey {
+	padding: 5rem 0;
+	background-color: $whiteColor;
+
+	.wrapper {
+		padding-top: 3.5rem;
+	}
+
+	.image {
+		flex: 0 0 25%;
+
+		img {
+			box-shadow: 14px 14px $tertiaryColor;
+		}
+	}
+
+	.content {
+		margin-left: 6.5rem;
+	}
+}
+
+// Gallery
+.gallery {
+	padding: 5rem 0;
+
+	.wrapper {
+		justify-content: space-between;
+	}
+}
+
+.galleryItem {
+	width: 31.3%;
+}
+
+// Footer
+footer {
+	background-color: #171717;
+	color: #f6f6f6;
+	text-align: center;
+	padding: 0.5rem 0;
+
+	p {
+		margin-top: 0;
+		text-align: center;
 	}
 }
