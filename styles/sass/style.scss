@@ -339,3 +339,42 @@ footer {
 		text-align: center;
 	}
 }
+
+//****// BLOG //****//
+
+.blog {
+	background-color: $whiteColor;
+
+	main {
+		.wrapper {
+			display: block;
+		}
+	}
+}
+
+.pageHeader {
+	margin-top: -3.5rem;
+
+	h2 {
+		font-size: 4rem;
+	}
+}
+
+.blogContent {
+	padding: 3rem 0;
+	display: flex;
+}
+
+.asideContent {
+	flex: 0 0 30%;
+}
+
+.author {
+	padding: 2rem;
+}
+
+.author,
+.recentPosts,
+.post {
+	background-color: #fff;
+}

@@ -516,3 +516,42 @@ footer p {
   margin-top: 0;
   text-align: center;
 }
+
+.blog {
+  background-color: #f6f6f6;
+}
+
+.blog main .wrapper {
+  display: block;
+}
+
+.pageHeader {
+  margin-top: -3.5rem;
+}
+
+.pageHeader h2 {
+  font-size: 4rem;
+}
+
+.blogContent {
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.asideContent {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.author {
+  padding: 2rem;
+}
+
+.author,
+.recentPosts,
+.post {
+  background-color: #fff;
+}
