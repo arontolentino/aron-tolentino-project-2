@@ -350,14 +350,18 @@ footer {
 			display: block;
 		}
 	}
-}
-
-.pageHeader {
-	margin-top: -3.5rem;
 
 	h2 {
 		font-size: 4rem;
 	}
+
+	h3 {
+		font-size: 1.2rem;
+	}
+}
+
+.pageHeader {
+	margin-top: -3.5rem;
 }
 
 .blogContent {
@@ -371,6 +375,35 @@ footer {
 
 .author {
 	padding: 2rem;
+	margin-bottom: 1rem;
+
+	img {
+		margin-bottom: 1.2rem;
+	}
+}
+
+.recentPosts {
+	padding: 2rem;
+
+	ul {
+		margin-top: 0.8rem;
+		padding-left: 1rem;
+
+		a {
+			font-family: $secondaryFont;
+			font-size: 1rem;
+			line-height: 1.7rem;
+			margin-top: 0.8rem;
+			padding-left: 0.5rem;
+			text-transform: none;
+
+			&:link,
+			&:visited,
+			&:focus {
+				color: $textColor;
+			}
+		}
+	}
 }
 
 .author,

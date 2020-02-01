@@ -525,12 +525,16 @@ footer p {
   display: block;
 }
 
-.pageHeader {
-  margin-top: -3.5rem;
+.blog h2 {
+  font-size: 4rem;
 }
 
-.pageHeader h2 {
-  font-size: 4rem;
+.blog h3 {
+  font-size: 1.2rem;
+}
+
+.pageHeader {
+  margin-top: -3.5rem;
 }
 
 .blogContent {
@@ -548,6 +552,33 @@ footer p {
 
 .author {
   padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.author img {
+  margin-bottom: 1.2rem;
+}
+
+.recentPosts {
+  padding: 2rem;
+}
+
+.recentPosts ul {
+  margin-top: 0.8rem;
+  padding-left: 1rem;
+}
+
+.recentPosts ul a {
+  font-family: "Cabin", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7rem;
+  margin-top: 0.8rem;
+  padding-left: 0.5rem;
+  text-transform: none;
+}
+
+.recentPosts ul a:link, .recentPosts ul a:visited, .recentPosts ul a:focus {
+  color: #171717;
 }
 
 .author,
