@@ -271,63 +271,23 @@ img {
   color: #f6f6f6;
 }
 
-.navBar {
-  background-color: #b9dde7;
-  padding: 0.5rem 0;
-}
-
-.navBar .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navBar .logo {
-  font-size: 1.9rem;
-}
-
-.navBar a {
-  font-family: "Oswald", sans-serif;
-  font-size: 0.95rem;
-  letter-spacing: 0.1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin: 0 1.5rem;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.navBar a:link, .navBar a:visited, .navBar a:focus {
-  color: #171717;
-}
-
-.navBar a:hover {
-  color: #f6f6f6;
-}
-
-.homeHero {
+.hero {
   background-color: #b9dde7;
   padding-top: 2rem;
   height: 550px;
 }
 
-.homeHero .image {
+.hero .image {
   margin-top: 1rem;
   width: 39%;
 }
 
-.homeHero .image img {
+.hero .image img {
   -webkit-box-shadow: 16px 16px white;
           box-shadow: 16px 16px white;
 }
 
-.homeHero .content {
+.hero .content {
   margin-left: 5rem;
   padding-top: 9rem;
   position: relative;
@@ -341,28 +301,28 @@ img {
   top: 130px;
 }
 
-.homeOverview {
+.overview {
   background-color: #f6f6f6;
   padding: 5.5rem 0;
 }
 
-.homeOverview .wrapper {
+.overview .wrapper {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-.homeOverview .content {
+.overview .content {
   width: 60%;
   padding-left: 3rem;
 }
 
-.homeFeatureGrid {
+.featureGrid {
   padding: 5rem 0;
   background-color: #f6f6f6;
 }
 
-.homeFeatureGrid .wrapper {
+.featureGrid .wrapper {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -505,47 +465,49 @@ img {
   width: 31.3%;
 }
 
-footer {
-  background-color: #171717;
-  color: #f6f6f6;
-  text-align: center;
-  padding: 0.5rem 0;
-}
-
-footer p {
-  margin-top: 0;
-  text-align: center;
-}
-
-.blog {
+.twoColumn {
   background-color: #f6f6f6;
 }
 
-.blog main .wrapper {
-  display: block;
-}
-
-.blog h1 {
+.twoColumn h1 {
   font-size: 1.6rem;
 }
 
-.blog h2 {
+.twoColumn h2 {
   font-size: 4rem;
 }
 
-.blog h3 {
+.twoColumn h3 {
   font-size: 1.2rem;
+}
+
+.twoColumn main .wrapper {
+  display: block;
 }
 
 .pageHeader {
   margin-top: -3.5rem;
 }
 
-.blogContent {
+.pageContent {
   padding: 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.mainContent {
+  margin-left: 2rem;
+}
+
+.mainItem {
+  background-color: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mainItem:first-child {
+  border-bottom: 5px solid #227284;
 }
 
 .asideContent {
@@ -554,25 +516,21 @@ footer p {
           flex: 0 0 30%;
 }
 
-.author {
+.asideItem {
+  background-color: #fff;
   padding: 2rem;
-  margin-bottom: 1rem;
 }
 
-.author img {
+.asideItem img {
   margin-bottom: 1.2rem;
 }
 
-.recentPosts {
-  padding: 2rem;
-}
-
-.recentPosts ul {
+.asideItem ul {
   margin-top: 0.8rem;
   padding-left: 1rem;
 }
 
-.recentPosts ul a {
+.asideItem ul a {
   font-family: "Cabin", sans-serif;
   font-size: 1rem;
   line-height: 1.7rem;
@@ -581,25 +539,51 @@ footer p {
   text-transform: none;
 }
 
-.recentPosts ul a:link, .recentPosts ul a:visited, .recentPosts ul a:focus {
+.asideItem ul a:link, .asideItem ul a:visited, .asideItem ul a:focus {
   color: #171717;
 }
 
-.author,
-.recentPosts,
-.post,
-.comment {
-  background-color: #fff;
+.asideItem:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
 
-.mainContent {
-  margin-left: 2rem;
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.post {
-  padding: 2rem;
-  border-bottom: 5px solid #227284;
-  margin-bottom: 2rem;
+.form input,
+.form textarea {
+  margin-bottom: 1rem;
+  border: none;
+  padding: 1.5rem 2rem;
+  font-size: 1rem;
+}
+
+.form #name,
+.form #email {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 49%;
+          flex: 0 0 49%;
+}
+
+.form #message,
+.form #submit {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.form #submit {
+  margin: 0;
+  border: none;
+  text-transform: uppercase;
 }
 
 .comments {
@@ -607,6 +591,7 @@ footer p {
 }
 
 .comment {
+  background-color: #fff;
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,41 +620,69 @@ footer p {
   margin-left: 1rem;
 }
 
-.commentForm {
+.navBar {
+  background-color: #b9dde7;
+  padding: 0.5rem 0;
+}
+
+.navBar .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.commentForm input,
-.commentForm textarea {
-  margin-bottom: 1rem;
-  border: none;
-  padding: 1.5rem 2rem;
-  font-size: 1rem;
+.navBar .logo {
+  font-size: 1.9rem;
 }
 
-.commentForm #name,
-.commentForm #email {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 49%;
-          flex: 0 0 49%;
-}
-
-.commentForm #comment,
-.commentForm #submit {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-}
-
-.commentForm #submit {
-  margin: 0;
-  border: none;
+.navBar a {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
   text-transform: uppercase;
+  margin: 0 1.5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.navBar a:link, .navBar a:visited, .navBar a:focus {
+  color: #171717;
+}
+
+.navBar a:hover {
+  color: #f6f6f6;
+}
+
+footer {
+  background-color: #171717;
+  color: #f6f6f6;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+footer p {
+  margin-top: 0;
+  text-align: center;
+}
+
+.contact .asideItem h3 {
+  text-transform: none;
+}
+
+.contact .asideItem ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact .asideItem ul li {
+  font-family: "Cabin", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7rem;
 }

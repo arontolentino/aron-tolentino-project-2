@@ -1,0 +1,29 @@
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	input,
+	textarea {
+		margin-bottom: 1rem;
+		border: none;
+		padding: 1.5rem 2rem;
+		font-size: 1rem;
+	}
+
+	#name,
+	#email {
+		flex: 0 0 49%;
+	}
+
+	#message,
+	#submit {
+		flex: 0 0 100%;
+	}
+
+	#submit {
+		margin: 0;
+		border: none;
+		text-transform: uppercase;
+	}
+}

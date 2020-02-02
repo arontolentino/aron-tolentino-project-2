@@ -1,0 +1,93 @@
+@import '../abstracts/variables';
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.visuallyHidden:not(:focus):not(:active) {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(00 0 0);
+	overflow: hidden;
+}
+
+body {
+	font-size: 62.5%;
+	font-smoothing: antialiased;
+	overflow-x: hidden;
+}
+
+a {
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+p {
+	font-family: $secondaryFont;
+	font-size: 1rem;
+	line-height: 1.7rem;
+	margin-top: 0.8rem;
+}
+
+h1 {
+	font-family: $primaryFont;
+	font-size: 8rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: $primaryFont;
+	font-size: 2rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: $primaryFont;
+	font-size: 1.6rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+}
+
+img {
+	width: 100%;
+	display: block;
+}
+
+.wrapper {
+	max-width: 1080px;
+	margin: 0 auto;
+	padding: 0 2rem;
+	display: flex;
+}
+
+.button {
+	font-family: $primaryFont;
+	font-size: 1rem;
+	letter-spacing: 0.05rem;
+	padding: 0.5rem 1.7rem;
+	margin-top: 1.5rem;
+	background-color: $accentColor;
+	display: inline-block;
+	transition: all 0.3s;
+
+	&:link,
+	&:visited,
+	&:focus {
+		color: $textColor;
+	}
+
+	&:hover {
+		background-color: $accentColor;
+		color: $whiteColor;
+	}
+}

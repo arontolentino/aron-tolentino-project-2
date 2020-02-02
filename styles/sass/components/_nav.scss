@@ -1,0 +1,34 @@
+.navBar {
+	background-color: $primaryColor;
+	padding: 0.5rem 0;
+
+	.wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.logo {
+		font-size: 1.9rem;
+	}
+
+	a {
+		font-family: $primaryFont;
+		font-size: 0.95rem;
+		letter-spacing: 0.1rem;
+		text-decoration: none;
+		text-transform: uppercase;
+		margin: 0 1.5rem;
+		transition: all 0.3s;
+
+		&:link,
+		&:visited,
+		&:focus {
+			color: $textColor;
+		}
+
+		&:hover {
+			color: $whiteColor;
+		}
+	}
+}

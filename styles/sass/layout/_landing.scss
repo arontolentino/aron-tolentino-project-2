@@ -1,0 +1,177 @@
+// Hero
+.hero {
+	background-color: $primaryColor;
+	padding-top: 2rem;
+	height: 550px;
+
+	.image {
+		margin-top: 1rem;
+		width: 39%;
+
+		img {
+			box-shadow: 16px 16px white;
+		}
+	}
+
+	.content {
+		margin-left: 5rem;
+		padding-top: 9rem;
+		position: relative;
+	}
+}
+
+.circleImg {
+	width: 33%;
+	height: auto;
+	position: absolute;
+	right: -45px;
+	top: 130px;
+}
+
+.overview {
+	background-color: $whiteColor;
+	padding: 5.5rem 0;
+
+	.wrapper {
+		justify-content: flex-end;
+	}
+
+	.content {
+		width: 60%;
+		padding-left: 3rem;
+	}
+}
+
+// Feature Grid
+.featureGrid {
+	padding: 5rem 0;
+	background-color: $whiteColor;
+
+	.wrapper {
+		flex-wrap: wrap;
+	}
+}
+
+.feature {
+	flex-basis: 50%;
+	margin-bottom: 3rem;
+	display: flex;
+
+	i {
+		background: $primaryColor;
+		padding: 0.8rem;
+		border-radius: 50%;
+		font-size: 1rem;
+	}
+
+	.content {
+		margin: 0 1rem;
+	}
+}
+
+// Spotlights
+.spotlights {
+	padding: 5rem 0;
+
+	.wrapper {
+		flex-wrap: wrap;
+	}
+}
+
+.spotlight {
+	display: flex;
+	flex: 0 0 100%;
+
+	&:first-child {
+		margin-bottom: 5rem;
+	}
+
+	.image {
+		position: relative;
+		flex: 0 0 50%;
+
+		&:after {
+			content: ' ';
+			position: absolute;
+			width: 200%;
+			bottom: -16px;
+			height: 100%;
+			z-index: 1;
+		}
+
+		img {
+			position: relative;
+			z-index: 2;
+		}
+	}
+}
+
+.spotlightRight {
+	margin-top: -7rem;
+	align-items: end;
+	.image {
+		&:after {
+			right: -16px;
+			background-color: $tertiaryColor;
+		}
+	}
+
+	.content {
+		margin-left: 6.5rem;
+	}
+}
+
+.spotlightLeft {
+	flex-direction: row-reverse;
+	margin-bottom: -6.5rem;
+
+	.image {
+		&:after {
+			left: 16px;
+			background-color: $secondaryColor;
+		}
+	}
+
+	.content {
+		margin-right: 6.5rem;
+
+		a {
+			float: right;
+		}
+	}
+}
+
+// Journey
+.journey {
+	padding: 5rem 0;
+	background-color: $whiteColor;
+
+	.wrapper {
+		padding-top: 3.5rem;
+	}
+
+	.image {
+		flex: 0 0 25%;
+
+		img {
+			box-shadow: 14px 14px $tertiaryColor;
+		}
+	}
+
+	.content {
+		margin-left: 6.5rem;
+	}
+}
+
+// Gallery
+.gallery {
+	padding: 5rem 0;
+
+	.wrapper {
+		justify-content: space-between;
+	}
+}
+
+.galleryItem {
+	width: 31.3%;
+}

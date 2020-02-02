@@ -1,0 +1,29 @@
+.comments {
+	margin-bottom: 2rem;
+}
+
+.comment {
+	background-color: #fff;
+	padding: 2rem;
+	display: flex;
+
+	p {
+		margin: 0;
+	}
+
+	&:not(:last-of-type) {
+		margin-bottom: 1rem;
+	}
+
+	&:last-child {
+		border-bottom: 5px solid $tertiaryColor;
+	}
+}
+
+.userAvatar {
+	flex: 0 0 10%;
+}
+
+.commentContent {
+	margin-left: 1rem;
+}
