@@ -525,6 +525,10 @@ footer p {
   display: block;
 }
 
+.blog h1 {
+  font-size: 1.6rem;
+}
+
 .blog h2 {
   font-size: 4rem;
 }
@@ -583,6 +587,46 @@ footer p {
 
 .author,
 .recentPosts,
-.post {
+.post,
+.comment {
   background-color: #fff;
+}
+
+.mainContent {
+  margin-left: 2rem;
+}
+
+.post {
+  padding: 2rem;
+  border-bottom: 4px solid #227284;
+  margin-bottom: 2rem;
+}
+
+.comment {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment p {
+  margin: 0;
+}
+
+.comment:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+
+.comment:last-child {
+  border-bottom: 4px solid #227284;
+}
+
+.userAvatar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+}
+
+.commentContent {
+  margin-left: 1rem;
 }

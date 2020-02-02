@@ -351,6 +351,10 @@ footer {
 		}
 	}
 
+	h1 {
+		font-size: 1.6rem;
+	}
+
 	h2 {
 		font-size: 4rem;
 	}
@@ -408,6 +412,42 @@ footer {
 
 .author,
 .recentPosts,
-.post {
+.post,
+.comment {
 	background-color: #fff;
+}
+
+.mainContent {
+	margin-left: 2rem;
+}
+
+.post {
+	padding: 2rem;
+	border-bottom: 4px solid $tertiaryColor;
+	margin-bottom: 2rem;
+}
+
+.comment {
+	padding: 2rem;
+	display: flex;
+
+	p {
+		margin: 0;
+	}
+
+	&:not(:last-of-type) {
+		margin-bottom: 1rem;
+	}
+
+	&:last-child {
+		border-bottom: 4px solid $tertiaryColor;
+	}
+}
+
+.userAvatar {
+	flex: 0 0 10%;
+}
+
+.commentContent {
+	margin-left: 1rem;
 }
