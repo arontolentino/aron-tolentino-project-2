@@ -1,17 +1,22 @@
 //IMPORTS
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
+
+// Base Styles
 @import 'base/normalize';
 @import 'base/base';
 
+// Resuable Components
 @import 'components/form';
 @import 'components/comments';
 @import 'components/nav';
 @import 'components/footer';
 
+// Page Layouts
 @import 'layout/landing';
 @import 'layout/twoColumn';
 
+// Specific Pages
 @import 'pages/home';
 @import 'pages/blog-post';
 @import 'pages/contact';

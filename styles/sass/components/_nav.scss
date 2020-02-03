@@ -6,10 +6,43 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@include respond(650px) {
+			flex-direction: column;
+		}
+	}
+
+	.navItem {
+		@include respond(650px) {
+			display: none;
+		}
 	}
 
 	.logo {
 		font-size: 1.9rem;
+		@include respond(650px) {
+			order: -1;
+		}
+	}
+
+	.burgerMenu {
+		display: none;
+		color: $textColor;
+
+		a {
+			font-size: 1.5rem;
+		}
+
+		@include respond(650px) {
+			display: block;
+			position: absolute;
+			right: 0;
+			margin-top: -0.1rem;
+		}
+	}
+
+	.mobileNavItem {
+		display: block;
 	}
 
 	a {

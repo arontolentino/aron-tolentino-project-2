@@ -20,6 +20,15 @@
 	}
 }
 
+.secondaryHero {
+	height: 50vh;
+	background-size: cover;
+
+	@include respond(425px) {
+		height: 30vh;
+	}
+}
+
 .pageHeader {
 	margin-top: -3.5rem;
 }
