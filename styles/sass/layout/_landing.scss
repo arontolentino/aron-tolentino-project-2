@@ -343,7 +343,7 @@
 		transform: scale(1.05);
 	}
 
-	@include respond(650px) {
+	@include respond(750px) {
 		width: 80%;
 		margin: 0 auto;
 
