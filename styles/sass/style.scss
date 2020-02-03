@@ -1,15 +1,16 @@
 //IMPORTS
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
 @import 'base/normalize';
 @import 'base/base';
-
-@import 'layout/landing';
-@import 'layout/twoColumn';
 
 @import 'components/form';
 @import 'components/comments';
 @import 'components/nav';
 @import 'components/footer';
+
+@import 'layout/landing';
+@import 'layout/twoColumn';
 
 @import 'pages/home';
 @import 'pages/blog-post';
