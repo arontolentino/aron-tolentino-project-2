@@ -14,6 +14,11 @@
 	#name,
 	#email {
 		flex: 0 0 49%;
+
+		@include respond(550px) {
+			flex: auto;
+			width: 100%;
+		}
 	}
 
 	#message,

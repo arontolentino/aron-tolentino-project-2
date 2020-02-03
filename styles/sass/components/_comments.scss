@@ -22,6 +22,10 @@
 
 .userAvatar {
 	flex: 0 0 10%;
+
+	@include respond(550px) {
+		flex: 0 0 20%;
+	}
 }
 
 .commentContent {

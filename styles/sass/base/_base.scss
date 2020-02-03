@@ -72,6 +72,10 @@ img {
 	margin: 0 auto;
 	padding: 0 2rem;
 	display: flex;
+
+	@include respond(425px) {
+		padding: 0 1rem;
+	}
 }
 
 .button {

@@ -27,10 +27,25 @@
 .pageContent {
 	padding: 3rem 0;
 	display: flex;
+
+	@include respond(768px) {
+		flex-direction: column-reverse;
+	}
+}
+
+.author {
+	@include respond(768px) {
+		display: none;
+	}
 }
 
 .mainContent {
 	margin-left: 2rem;
+
+	@include respond(768px) {
+		margin-left: 0;
+		margin-bottom: 2rem;
+	}
 }
 
 .mainItem {
