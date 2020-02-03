@@ -122,6 +122,14 @@
 	}
 }
 
+// Image Banner
+.imageBanner {
+	background-image: url('../images/home-image-2.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 65vh;
+}
+
 // Feature Grid
 .featureGrid {
 	padding: 5rem 0;

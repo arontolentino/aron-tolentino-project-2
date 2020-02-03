@@ -656,6 +656,13 @@ footer p {
   }
 }
 
+.imageBanner {
+  background-image: url("../images/home-image-2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+}
+
 .featureGrid {
   padding: 5rem 0;
   background-color: #f6f6f6;
