@@ -14,6 +14,11 @@
 	.image {
 		margin-top: 1rem;
 		width: 39%;
+		transition: transform 0.2s;
+
+		&:hover {
+			transform: scale(1.05);
+		}
 
 		img {
 			box-shadow: 16px 16px white;
@@ -172,6 +177,11 @@
 	.image {
 		position: relative;
 		flex: 0 0 50%;
+		transition: transform 0.2s;
+
+		&:hover {
+			transform: scale(1.05);
+		}
 
 		&:after {
 			content: ' ';
@@ -319,6 +329,11 @@
 
 .galleryItem {
 	width: 31.3%;
+	transition: transform 0.2s;
+
+	&:hover {
+		transform: scale(1.05);
+	}
 
 	@include respond(650px) {
 		width: 80%;
